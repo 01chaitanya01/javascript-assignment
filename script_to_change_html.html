@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello world</h1>
+      <p class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum optio
+        illo obcaecati. Aperiam in libero harum sint sed, amet quisquam.
+      </p>
+      <p class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum optio
+        illo obcaecati. Aperiam in libero harum sint sed, amet quisquam.
+      </p>
+    </div>
+
+    <script>
+      const heading = document.getElementsByTagName("h1")[0];
+      const body = document.getElementsByTagName("body")[0];
+      const para1 = document.getElementsByClassName("para")[0];
+      const para2 = document.getElementsByClassName("para")[1];
+      heading.innerHTML = "Hello Earth";
+      body.style.backgroundColor = "#99d98c";
+      para1.innerHTML += "This is appended text using javaScript.";
+      para1.style.color = "#064789";
+      para2.innerHTML = "Text changed using script";
+    </script>
+  </body>
+</html>

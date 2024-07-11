@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change the text of para</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      button {
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Changing text in click button using JS</h1>
+    <p>This is the text before you click the button</p>
+    <button>Click</button>
+
+    <script>
+      const btn = document.getElementsByTagName("button")[0];
+      const text = document.getElementsByTagName("p")[0];
+
+      btn.addEventListener("click", () => {
+        text.innerHTML = "This is the text after clicking the button";
+      });
+    </script>
+  </body>
+</html>

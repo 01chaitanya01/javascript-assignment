@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #343a40;
+  color: #e9ecef;
+}
+
+.form-container h1 {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.form {
+  width: 40rem;
+  border: 2px solid #e9ecef;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .form {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .form {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .form {
+    width: 90%;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label:first-child {
+  font-size: 1.2rem;
+}
+
+.input-group input {
+  padding: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.radio-input {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group label {
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #212529;
+  color: #dee2e6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+.buttons button:active {
+  transform: scale(1);
+}
+
+.error-message {
+  display: block;
+  color: rgb(247, 116, 116);
+  font-size: 15px;
+}

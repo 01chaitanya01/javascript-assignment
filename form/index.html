@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Form</h1>
+      <form id="myForm" class="form">
+        <div class="input-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Enter your first name"
+          />
+          <small class="error-message" id="firstNameError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Enter your last name"
+          />
+          <small class="error-message" id="lastNameError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="gender">Gender</label>
+          <div class="radio-input">
+            <div class="radio-group">
+              <input type="radio" name="gender" id="genderMale" value="male" />
+              <label for="genderMale">Male</label>
+            </div>
+
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="gender"
+                id="genderFemale"
+                value="female"
+              />
+              <label for="genderFemale">Female</label>
+            </div>
+
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="gender"
+                id="genderOther"
+                value="other"
+              />
+              <label for="genderOther">Other</label>
+            </div>
+          </div>
+          <small class="error-message" id="genderError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input
+            type="number"
+            name="mobileNumber"
+            id="mobileNumber"
+            placeholder="Enter your mobile number"
+          />
+          <small class="error-message" id="mobileNumberError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="buttons">
+          <button type="reset">Clear Form</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
