@@ -17,13 +17,13 @@ document.getElementById("addButton").addEventListener("click", () => {
     const listRow = document.createElement("div");
     listRow.className = "list-row";
     listRow.innerHTML = `
-      <div class="task-list">
-        <input type="checkbox" id="task${taskData.id}" />
-        <label for="task${taskData.id}">${taskData.task}</label>
-      </div>
-      <div class="remove-btn">
-        <button class="x-btn" onclick="removeTask(${taskData.id})"><i class="fa fa-close"></i></button>
-      </div>
+        <div class="task-list">
+          <input type="checkbox" id="task${taskData.id}" />
+          <label for="task${taskData.id}">${taskData.task}</label>
+        </div>
+        <div class="remove-btn">
+          <button class="x-btn" onclick="removeTask(${taskData.id})"><i class="fa fa-close"></i></button>
+        </div>
     `;
 
     // append the row in list comtainer
